@@ -1,0 +1,15 @@
+run_tests:
+  before_script:
+    - echo "Preparing test data..."
+    - sleep 5
+  script:
+    - echo "Running tests..."
+  after_script: 
+    - echo "Cleaning up env..."
+build_image:
+  script:
+    - echo "Building image..." 
+push_image: 
+  script:
+    - echo "Login in docker registery"
+    - echo "Pushing image to repository...  "
